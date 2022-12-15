@@ -2,9 +2,11 @@
 
 100 Days of Code : The Complete Python Pro Bootcamp by Dr. Angela Yu on Udemy
 
-Day 2 : Tip Calculator
+Day 2 : Tip Calculator 
 
-Date : 12/12/2022
+When given the total bill, percentage tip and number of people, this calculator returns the amount per person to be paid.
+
+Date : 14/12/2022
 Author : E Forster
 
 """
