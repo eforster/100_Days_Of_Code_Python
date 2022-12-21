@@ -11,6 +11,8 @@ Author : E Forster
 
 """
 
+# Takes in desired inputs from user for pizza details :
+
 print("Welcome to Python Pizza Deliveries! \n")
 size = input("What size pizza would you like?  Please choose from : S, M or L \n")
 add_pepperoni = input("Would you like pepperoni?  Y for Yes and N for No : \n")
@@ -29,6 +31,8 @@ cheese = 1
 # Initialised final_bill to be added to later :
 
 final_bill = 0
+
+# Conditions for different inputs :
 
 if size == 'S' or size == 's' :
      
@@ -82,8 +86,8 @@ elif size == 'L' or size == 'l' :
         pass
 
 else :
-    
-    print("Input error. \n")
+
+    print("Input error. \n")                                    # Error catching
 
 
 print("Your final bill is : £", round(final_bill, 2))

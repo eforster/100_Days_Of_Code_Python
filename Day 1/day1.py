@@ -13,8 +13,8 @@ Author : E Forster
 
 print("Welcome to the Band Name Generator : \n")
 
-city = input("What is the name of the city you grew up in? \n")
+city = input("What is the name of the city you grew up in? \n")         # Takes a city name as input
 
-pet = input("Choose an animal : \n")
+animal = input("Choose an animal : \n")                                    # Takes an animal as input
 
-print("A possible name for your band could be :", city, pet)
+print("A possible name for your band could be :", city, animal)

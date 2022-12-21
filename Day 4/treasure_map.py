@@ -20,7 +20,9 @@ row0 = [" ", " ", " "]
 row1 = [" ", " ", " "]
 row2 = [" ", " ", " "]
 map = [row0, row1, row2]
-print(f"{row0}\n{row1}\n{row2}\n")
+print(f"{row0}\n{row1}\n{row2}\n")              # Prints empty map for user to begin guesses
+
+# Randomly assigns treasure position
 
 treasure_x = random.randint(0, 2)
 treasure_y = random.randint(0, 2)
@@ -28,7 +30,11 @@ treasure = str(treasure_x) + str(treasure_y)
 
 guess1 = input("Please input from 0-2 a row number and a column number for your first guess of where the treasure is :\n")
 
+# Begins comparisons of guess positions to the treasure condition
+
 if guess1 == treasure :
+
+    # Treasure guessed correctly and marks the treasure and reprints to terminal
 
     print("Congratulations!  You have found the treasure. X marks the spot!\n")
     row = int(treasure_x)
@@ -38,6 +44,8 @@ if guess1 == treasure :
 
 
 else :
+    
+    # Guessed incorrectly, maps a "O" for the incorrect guess, reprints map and allows for another guess.  
 
     row = int(guess1[0])
     column = int(guess1[1])
@@ -49,6 +57,7 @@ else :
 
     guess2 = input("Please input from 0-2 a row number and a column number for another guess of where the treasure is :\n")
     
+    # Etc
 
     if guess2 == treasure :
 

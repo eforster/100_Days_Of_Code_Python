@@ -15,7 +15,11 @@ import random
 
 choice = input("Heads or tails? \n")
 
+# Randomly rolls for 0 or 1
+
 roll = random.randint(0, 1)
+
+# Conditions and assignments of numbers for heads or tails
 
 if choice == 'Heads' or choice == 'heads' :
 
@@ -25,6 +29,7 @@ elif choice == 'Tails' or choice == 'tails' :
 
     choice_number = 1
 
+# Condition for win or lose - does the input match computer roll
 
 if roll == choice_number :
 

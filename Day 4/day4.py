@@ -16,6 +16,7 @@ import random
 print("Welcome to Rock, Paper, Scissors! \n")
 player_choice = int(input("Please choose 0 for rock, 1 for paper, and 2 for scissors :\n"))
 
+# Conditionals and assignments for numbers to actions
 if player_choice == 0 :
 
     print("\nPlayer chose rock. \n")
@@ -33,7 +34,7 @@ else :
     print("\nInvalid input.  Try again. \n")
 
 
-computer_choice = random.randint(0, 2)
+computer_choice = random.randint(0, 2)              # Computer randomly rolls a number for it's choice of action
 
 if computer_choice == 0 :
 
@@ -46,6 +47,8 @@ elif computer_choice == 1 :
 else :
 
     print("Computer chose scissors. \n")
+
+# Conditions for comparing computer to player choice, to determine win or lose
 
 if computer_choice > player_choice :
 
@@ -62,9 +65,3 @@ elif player_choice > computer_choice :
 else :
 
     print("It's a draw.\n")
-
-
-
-    
-
-

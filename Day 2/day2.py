@@ -13,9 +13,9 @@ Author : E Forster
 
 print("Welcome to Tip Calculator. \n")
 
-total = float(input("What was the total bill? £"))
-percentage = int(input("What percentage tip would you like to give? \n"))
-num_people = int(input("How many people to split the bill? \n"))
+total = float(input("What was the total bill? £"))                                  # Takes total bill as input
+percentage = int(input("What percentage tip would you like to give? \n"))           # Takes a percentage as input for tip
+num_people = int(input("How many people to split the bill? \n"))                    # Takes in number of people to split bill between
 
 # Percentage divided by 100 gives tip as decimal value, adds 1 to make it a percentage increase which can then be used to divide equally among the people
 person_pay = round((total * ((percentage / 100) + 1)) / num_people, 2)

@@ -16,6 +16,8 @@ print("Your mission is to find the treasure.\n")
 
 choice1 = input("You are at a crossroads.  Do you go left or right? \n").lower()
 
+# Conditions and followings for each step towards treasure.  It is a bit random.
+
 if choice1 == "left" :
 
     choice2 = input("You follow the fork to the left.  You approach a fast running river.  Do you go back, make a raft or swim for it?  PLease input either back, raft or swim respectively.\n").lower()

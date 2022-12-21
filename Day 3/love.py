@@ -33,7 +33,9 @@ e = string.count("e")
 love = l + o + v + e
 true = t + r + u + e
 
-love_score = int(str(true)) + int(str(true))
+love_score = int(str(true)) + int(str(true))            # Strings together total score
+
+# Conditions for each ranking of score :
 
 if love_score < 10 or love_score > 90 :
 
