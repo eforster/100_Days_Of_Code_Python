@@ -2,7 +2,7 @@
 
 100 Days of Code : The Complete Python Pro Bootcamp by Dr. Angela Yu on Udemy
 
-Day 6 : Hurdles 1 with Reeborg's World
+Day 6 : Hurdles 3 with Reeborg's World
 
 Program for Reeborg to look ahead, jump any hurdles and not hit them.
 
@@ -23,6 +23,7 @@ def turn_right() :
     turn_left()
     turn_left()
 
+
 # Function to jump a hurdle :
 
 def jump() :
@@ -35,9 +36,14 @@ def jump() :
     move()
     turn_left()
 
-# Loops over the 6 hurdles on hurdles1 on Reeborg's World :
+# Tells robot to do movements until they reach the goal :
 
-for step in range(6) :
+while not at_goal() :
 
-    move()
-    jump()
+    if front_is_clear() :
+        
+        move()
+        
+    else :
+        
+        jump()
